@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <div>
+      <p>CLIENTES</p>
+      <!-- Enviar nuevo cliente -->
+      <input type="text" placeholder="Nombre" id="nombre" />
+      <input type="text" placeholder="Apellidos" id="apellidos" />
+      <input type="text" placeholder="DNI" id="dni" />
+      <button onclick="nuevoCliente()">Registar cliente</button>
+      <button onclick="editarCliente()">Editar cliente</button>
+      <button onclick="borrarCliente()">Borrar cliente</button>
+    </div>
+    <!-- divs para imprimir lo que devuelve la db -->
+    <div id="div1"></div>
+    <div>
+      <p>HABITACIONES</p>
+      <button onclick="mostrarHabitaciones()">Mostrar habitaciones</button>
+    </div>
+    <div id="div2"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
